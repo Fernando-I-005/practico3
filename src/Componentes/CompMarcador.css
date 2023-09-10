@@ -1,0 +1,91 @@
+.claseContMarcador {
+   border: solid 3px yellow;
+   width: 650px;
+   margin: auto;
+   border: 4px solid #f07167;
+   border-radius: 30px;
+   background-color: #0081a7ff;
+   text-align: center;
+   padding: 5px;
+   width: 650px;
+   height: 110px;
+   color: #fdfcdcff;
+
+}
+
+.claseContMarcador2 {
+   border: solid 3px rgb(19, 192, 85);
+   display: block;
+   justify-items: center;
+   text-align: center;
+   padding: 0px;
+   margin: 5px;
+
+}
+
+.claseContMarcador3 {
+
+   display: inline-block;
+   width: 150px;
+   height: 40px;
+   background-color: #f07167ff;
+   border-radius: 10px;
+   justify-items: center;
+   text-align: center;
+   padding: 5px;
+   margin: 5px;
+   font-size: 0.8em;
+
+}
+
+
+
+.claseContMarcadorParrafo {
+   border: solid 3px rgb(19, 192, 85);
+   display: block;
+   text-align: center;
+   padding: 0px;
+   margin: 0px;
+   font-size: 0.8em;
+
+}
+
+.claseContMarcadorRound {
+
+   display: inline-block;
+   width: 150px;
+   height: 40px;
+   
+   border-radius: 10px;
+   justify-items: center;
+   text-align: center;
+   padding: 5px;
+   margin: 5px;
+   font-size: 0.8em;
+
+}
+
+
+/* no aplica efectos*/
+
+
+/*.claseM1 {
+   
+}
+
+.claseM2 {
+   display: inline;
+   border: solid 5px yellow;
+}
+
+.claseM3 {
+   display: block;
+   border: solid 5px red;
+}*/
+
+/*{
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: space-around;
+   margin: 10px
+}*/

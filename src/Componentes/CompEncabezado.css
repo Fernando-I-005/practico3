@@ -1,0 +1,38 @@
+.compEncabezadoExt{
+margin:20px auto;
+border:solid 2px violet;
+width: 650px;
+height: 60px;
+text-align: center;
+}
+
+
+.compEncabezadoParrafo{
+    font-size: 1.3em;
+    color: #302d2d;
+    margin: 15px;
+    padding: 0px;
+    text-shadow: 1px 1px 1px grey;
+
+}
+
+
+
+/*
+
+.claseCE1 {
+    display: inline-block;
+    margin: auto;
+    border: solid 3px green;
+    width: 650px;
+    height: 30px;
+    text-align: center;
+    align-items:center;
+
+}
+
+
+
+.claseCE2 {
+    
+}*/

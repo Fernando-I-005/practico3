@@ -1,0 +1,55 @@
+.displayImgGrupo1 {
+    border: solid 3px rgb(19, 192, 85);
+    display: block;
+    justify-items: center;
+    text-align: center;
+    padding: 0px;
+    margin: 5px;
+ 
+ }
+ 
+ .displayImgGrupo2 {
+    display: inline-block;
+    width: 150px;
+    height: 170px;
+    font-size: 0.5em;
+    border-radius: 10px;
+    justify-items:center;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    border: solid 3px rgb(21, 25, 221);
+ 
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.claseL {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin: 10px;
+    background-color: bisque;
+    width: 600px;
+    height: 230px;
+    padding: 5px;
+    border: solid 1px green;
+    width: 600px;
+    height: 230px;
+    padding: 5px;
+    justify-content: center;
+}*/

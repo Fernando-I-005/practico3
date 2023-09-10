@@ -1,17 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { CompEncabezado } from './Componentes/CompEncabezado';
+import { CompUsuario } from './Componentes/CompUsuario';
+import { CompMarcador } from './Componentes/CompMarcador';
+import { CompPrincipal } from './Componentes/CompPrincipal';
+import { CompPiePagina } from './Componentes/CompPiePagina';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <CompEncabezado tituloJuego="Piedra, Papel o Tijeras(prps)"/>
+    <CompUsuario />
+    <CompMarcador nombre1="FernandoPp" marcador1={11} nombre2="ComputadoraPp" marcador2={33} round={55} textoParr1=" El juego es al mejor de 5 enfrentamientos. ¡Suerte! desde Pp"/>
+    <CompPrincipal nombre1="NombPrps" nombre2="CompuPrps"/>
+    <CompPiePagina />
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
