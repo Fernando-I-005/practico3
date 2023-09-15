@@ -1,14 +1,31 @@
-import React from 'react'
+import React,{useState} from 'react'
 import "./EntradaUsuario.css"
 
-const manejadorChange= (e) => {console.log(e.target.value)}
+export const EntradaUsuario = ({ nombreUsuario, setNombreUsuario }) => {
+  const [inputHabilitado, setInputHabilitado] = useState(true);
+  
+  const handleInputChange = (event) => {
+    setNombreUsuario(event.target.value);
+  };
+  const handleInputBlur = () => {
+      setInputHabilitado(false);
+  };
 
-export const EntradaUsuario = () => {
   return (
     <div>
-          <input onChange={manejadorChange}  className='claseBotonEntrada'></input>
+      
+      <input
+        type="text"
+        placeholder="Ingrese su nombre"
+        value={nombreUsuario}
+        onChange={handleInputChange}
+        onBlur={handleInputBlur}
+        maxLength={20}
+        className='claseBotonEntrada'
+        disabled={!inputHabilitado}
+      />
     </div>
 
-      )
+  )
 }
 
