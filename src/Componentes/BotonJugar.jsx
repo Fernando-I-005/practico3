@@ -11,22 +11,22 @@ export const BotonJugar = ({ setganadorround, ganadorround, eleccionUsuario, ele
 
 
     const determinarGanador = () => {
-        if (eleccionPC == "tijeras" && eleccionUsuario == "papel") {
+        if (eleccionPC === "tijeras" && eleccionUsuario === "papel") {
             setganadorround("Gana PC")
         }
-        else if (eleccionUsuario == "tijeras" && eleccionPC == "papel") {
+        else if (eleccionUsuario === "tijeras" && eleccionPC === "papel") {
             setganadorround("gana Usuario")
         }
-        else if (eleccionPC == "tijeras" && eleccionUsuario == "piedra") {
+        else if (eleccionPC === "tijeras" && eleccionUsuario === "piedra") {
             setganadorround("gana Usuario")
         }
-        else if (eleccionUsuario == "tijeras" && eleccionPC == "piedra") {
+        else if (eleccionUsuario === "tijeras" && eleccionPC === "piedra") {
             setganadorround("Gana PC")
         }
-        else if (eleccionPC == "piedra" && eleccionUsuario == "papel") {
+        else if (eleccionPC === "piedra" && eleccionUsuario === "papel") {
             setganadorround("gana Usuario")
         }
-        else if (eleccionUsuario == "piedra" && eleccionPC == "papel") {
+        else if (eleccionUsuario === "piedra" && eleccionPC === "papel") {
             setganadorround("Gana PC")
         }
         else {
