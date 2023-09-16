@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import "./EntradaUsuario.css"
 
-export const EntradaUsuario = ({ nombreUsuario, setNombreUsuario }) => {
+export const EntradaUsuario = ({ nombreUsuario, setNombreUsuario, setcontenidoInput, contenidoInput }) => {
   const [inputHabilitado, setInputHabilitado] = useState(true);
   
   const handleInputChange = (event) => {
@@ -16,11 +16,11 @@ export const EntradaUsuario = ({ nombreUsuario, setNombreUsuario }) => {
       
       <input
         type="text"
-        placeholder="Ingrese su nombre"
+        placeholder= {contenidoInput}
         value={nombreUsuario}
         onChange={handleInputChange}
         onBlur={handleInputBlur}
-        maxLength={20}
+        maxLength={15}
         className='claseBotonEntrada'
         disabled={!inputHabilitado}
       />

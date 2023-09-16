@@ -1,35 +1,11 @@
-/*.claseDisplayMarcador1{
-    border: solid 3px red;
-    display: inline;
-    width: 500px;
-    height: 500px;
- } /* no aplica efectos*/
-
-/*.claseDisplayMarcadorInline{
-display: inline;
-border: solid 3px blue;
-}
-
-.claseDisplayMarcadorBlock{
-display: block;
-}*/
-
-/*.claseD {
-    display: inline-block;
-    width: 200px;
-    height: 50px;
-    background-color: #f07167ff;
-    border-radius: 10px;
-    padding: 4px;
-}*/
 
 h4 {
     margin: 0px;
     padding: 0px;
     color: #fed9b7ff;
     justify-items: center;
-   text-align: center;
-border: solid 1px black;
+    text-align: center;
+    /*border: solid 1px black;*/
 }
 
 h3 {
@@ -37,8 +13,8 @@ h3 {
     padding: 0px;
     color: #fed9b7ff;
     justify-items: center;
-   text-align: center;
-   border: solid 1px white;
+    text-align: center;
+    /*border: solid 1px white;*/
 
 }
 
@@ -47,17 +23,8 @@ h5 {
     padding: 0px;
     color: #fed9b7ff;
     justify-items: center;
-   text-align: center;
-   border: solid 1px pink;
+    text-align: center;
+    /*border: solid 1px pink;*/
 
 }
 
-/*
-/*.claseDisplayMarcador1{
-    
-    width: 200px;
-    height: 50px;
-    background-color: #f07167ff;
-    border-radius: 10px;
-    padding: 4px;
-}*/

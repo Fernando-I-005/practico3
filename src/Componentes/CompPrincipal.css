@@ -1,18 +1,18 @@
 .claseCompPrinExt {
-    border: solid 4px orange;
-    width: 620px;
+    /*border: solid 4px orange;*/
+    width: 630px;
     text-align: center;
     justify-content: space-around;
     border: 4px solid #f07167;
     border-radius: 30px;
     background-color: #00afb9ff;
-    height: 510px;
+    height: 490px;
     margin: 10px auto ;
     padding: 10px;
 }
 
 .claseCompPrinParrafo {
-    border: solid 3px rgb(56, 19, 192);
+    /*border: solid 3px rgb(56, 19, 192);*/
     display: block;
     text-align: center;
     padding: 0px;

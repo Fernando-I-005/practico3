@@ -1,34 +1,9 @@
-/*h5 {
-    /*text-align: center;
-    color: #fed9b7ff;*/
-   /* display: inline-block;
-    width: 150px;
-    height: 30px;
-    color: black;
-    margin: auto;
-    padding: auto;
-    text-align: center;
-}
 
-
-h4,h5 {
-    margin: 3px;
-    padding: 0px;
-    color: #fed9b7ff;
-}
-
-
-h5 {
-    text-align: center;
-    margin: 0px;
-    padding: 0px;
-    font-size: 0.9em;
-}*/
 .claseDisplayEnfrentamiento{ 
 color: #fed9b7ff;
 justify-items: center;
 text-align: center;
-border: solid 3px yellow;
+/*border: solid 3px yellow;*/
 width: 140px;
 height: inherit;
 

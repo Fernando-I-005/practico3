@@ -1,5 +1,5 @@
 .claseContMarcador {
-   border: solid 3px yellow;
+   /*border: solid 3px yellow;*/
    width: 650px;
    margin: auto;
    border: 4px solid #f07167;
@@ -14,7 +14,7 @@
 }
 
 .claseContMarcador2 {
-   border: solid 3px rgb(19, 192, 85);
+   /*border: solid 3px rgb(19, 192, 85);*/
    display: block;
    justify-items: center;
    text-align: center;
@@ -38,10 +38,8 @@
 
 }
 
-
-
 .claseContMarcadorParrafo {
-   border: solid 3px rgb(19, 192, 85);
+   /*border: solid 3px rgb(19, 192, 85);*/
    display: block;
    text-align: center;
    padding: 0px;
@@ -55,8 +53,7 @@
    display: inline-block;
    width: 150px;
    height: 40px;
-   
-   border-radius: 10px;
+      border-radius: 10px;
    justify-items: center;
    text-align: center;
    padding: 5px;
@@ -65,27 +62,3 @@
 
 }
 
-
-/* no aplica efectos*/
-
-
-/*.claseM1 {
-   
-}
-
-.claseM2 {
-   display: inline;
-   border: solid 5px yellow;
-}
-
-.claseM3 {
-   display: block;
-   border: solid 5px red;
-}*/
-
-/*{
-   display: flex;
-   flex-flow: row nowrap;
-   justify-content: space-around;
-   margin: 10px
-}*/

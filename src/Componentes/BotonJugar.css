@@ -1,40 +1,14 @@
 .claseBJ {
-border: solid 3px rgb(19, 192, 85);
+    /*border: solid 3px rgb(19, 192, 85);*/
     justify-items: center;
-   text-align: center;
-   padding: 0px;
-   margin: 5px;
-   height: 40px;
-   width: 360px;
-    
-   background-color: #f07167ff;
-   border-radius: 14px;
-   font-size: 1.2em;
-   font-family: 'Josefin Sans', sans-serif;
-   border: none;
-}
-
-
-/*.claseBJ {
-    /* boton jugar*/
-   /* width: 350px;
-    height: 40px;
-    
-    background-color: #f07167ff;
-    border-radius: 14px;
-    font-size: 1.2em;
-    font-family: 'Josefin Sans', sans-serif;
-    border: none;
-}
-*/
-/*width: 350px;
-    height: 40px;
+    text-align: center;
+    padding: 0px;
     margin: 5px;
+    height: 40px;
+    width: 310px;
     background-color: #f07167ff;
     border-radius: 14px;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-family: 'Josefin Sans', sans-serif;
     border: none;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;*/
+}

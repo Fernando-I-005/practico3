@@ -1,5 +1,5 @@
 .claseCompUsuarioEx {
-    border: solid 3px brown;
+    /*border: solid 3px brown;*/
     text-align: center;
     padding: px;
     width: 600px;
@@ -10,7 +10,7 @@
     }
 
 .claseCompUsuarioInt {
-    border: solid 3px rgb(14, 171, 192);
+    /*border: solid 3px rgb(14, 171, 192);*/
     width: 250px;
     display:inline-block;
     margin: 10px;
@@ -20,15 +20,3 @@
 
 
 
-
-/*.claseU {
-    text-align: center;
-
-    
-    
-    padding: 0px;
-    
-    margin: 0px;
-    border: solid yellow 3px;
-    
-}*/

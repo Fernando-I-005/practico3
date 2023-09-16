@@ -7,29 +7,37 @@ import { CompPiePagina } from './CompPiePagina';
 
 
 export const App = () => {
+
   const [nombreUsuario, setNombreUsuario] = useState("");
   const [textoParrafo1, setTextoParrafo1] = useState("");
+  const [contTriunfosUsuario, setcontTriunfosUsuario] = useState("0")
+  const [contadorTriunfosPC, setContadorTriunfosPC] = useState("0")
+  const [contadorRound, setContadorRound] = useState("0")
 
-  /*const actualizarNombreUsuarioPadre = (nuevoNombreUsuario) => {
-    setNombreUsuario(nuevoNombreUsuario);
-  };*/
 
 
   return (
     <>
-      <CompEncabezado tituloJuego="Piedra, Papel o Tijeras(prps)" />
+      <CompEncabezado
+        tituloJuego="Piedra, Papel o Tijeras(prps)" />
+
+      <CompUsuario
+        nombreUsuario={nombreUsuario}
+        setNombreUsuario={setNombreUsuario} />
+
+      <CompMarcador
+        nombre1={nombreUsuario}
+        marcador1={contTriunfosUsuario} 
+        nombre2="Computadora"
+        marcador2={contadorTriunfosPC} 
+        round={contadorRound} 
+        textoParr1={textoParrafo1}
+        setTextoParrafo1={setTextoParrafo1} />
 
 
-
-      <CompUsuario nombreUsuario={nombreUsuario} setNombreUsuario={setNombreUsuario} />
-
-
-      <CompMarcador nombre1={nombreUsuario} marcador1={11} nombre2="Computadora" marcador2={33} round={55} textoParr1={textoParrafo1} setTextoParrafo1={setTextoParrafo1}/>
-
-
-
-
-      <CompPrincipal nombre1="NombPrps" nombre2="CompuPrps" />
+      <CompPrincipal
+        nombre1={nombreUsuario}
+        nombre2="CompuPrps" />
 
 
       <CompPiePagina />
