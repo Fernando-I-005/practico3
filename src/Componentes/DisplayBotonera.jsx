@@ -12,7 +12,7 @@ export const DisplayBotonera = ({ eleccionUsuario, setEleccionUsuario ,setElecci
         eleccionUsuario={eleccionUsuario}
         setEleccionUsuario={setEleccionUsuario}
         etEleccionPC
-        imagen="practico3/recursos/Piedramini.png"
+        imagen="./practico3/recursos/Piedramini.png"
         valor={"piedra"}
         setEleccionPC={setEleccionPC}
         eleccionPC={eleccionPC}
@@ -22,7 +22,7 @@ export const DisplayBotonera = ({ eleccionUsuario, setEleccionUsuario ,setElecci
       />
       
       <BotonSimbolo
-        imagen="practico3/recursos/Papelmini.png"
+        imagen="/practico3/recursos/Papelmini.png"
         eleccionUsuario={eleccionUsuario}
         setEleccionUsuario={setEleccionUsuario}
         valor={"papel"}
