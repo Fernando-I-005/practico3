@@ -23,8 +23,8 @@ export const CompPrincipal = ({ nombre1, nombre2 }) => {
         <div className='claseCompPrinExt'>
             <section className='claseCompPrinParrafo'>
                 <DisplayParrafo2 />
-                <h5>usuario eligio {eleccionUsuario}</h5>
-                <h5>pc eligio {eleccionPC}</h5>
+                <h4>(p/desarrollador) Usuario eligio {eleccionUsuario}</h4>
+                <h4>(p/desarrollador) Pc eligio {eleccionPC}</h4>
             </section>
 
             <section>
@@ -46,7 +46,7 @@ export const CompPrincipal = ({ nombre1, nombre2 }) => {
                     ganadorround={ganadorround}
                     setganadorround={setganadorround}
                 />
-                <h5> ganador {ganadorround}</h5>
+                <h5> Resultado: {ganadorround}</h5>
             </section>
 
             <section>

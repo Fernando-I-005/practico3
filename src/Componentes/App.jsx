@@ -19,7 +19,7 @@ export const App = () => {
   return (
     <>
       <CompEncabezado
-        tituloJuego="Piedra, Papel o Tijeras" />
+        tituloJuego="Piedra, Papel o Tijeras(en construccion)" />
 
       <CompUsuario
         nombreUsuario={nombreUsuario}
