@@ -1,8 +1,8 @@
-import React,{useEffect,useState} from 'react'
+import React, { useEffect } from 'react'
 import "./DisplayParrafo1.css"
 
-export const DisplayParrafo1 = ({textoParrafo1,setTextoParrafo1,nombre}) => {
-  
+export const DisplayParrafo1 = ({ textoParrafo1, setTextoParrafo1, nombre }) => {
+
   useEffect(() => {
     if (nombre) {
       setTextoParrafo1(`Bienvenido, ${nombre}! `);
@@ -11,15 +11,10 @@ export const DisplayParrafo1 = ({textoParrafo1,setTextoParrafo1,nombre}) => {
     }
   }, [nombre]);
 
-  
-  
-
-
-
 
   return (
     <div >
-    <p className='claseDisplayParrafo1'> {textoParrafo1}</p>
+      <p className='claseDisplayParrafo1'> {textoParrafo1}</p>
     </div>
   )
 }

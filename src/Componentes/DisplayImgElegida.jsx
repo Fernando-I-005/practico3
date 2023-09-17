@@ -8,7 +8,11 @@ export const DisplayImgElegida = ({nombre, imagen}) => {
 
     <p className='claseDisplayImgElegParrafo'>{nombre}</p>
 
-    <img className='claseDisplayImgElegIMG' src={imagen} alt="PiedraM22al" style={{ width: '125px', height: '125px' }} ></img>
+    <img 
+    className='claseDisplayImgElegIMG'
+    src={imagen} alt="PiedraM22al" 
+    style={{ width: '125px', height: '125px' }} >
+    </img>
      </>
   )
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import { BotonSimbolo } from './BotonSimbolo'
 
-export const DisplayBotonera = ({ eleccionUsuario, setEleccionUsuario ,setEleccionPC,eleccionPC, opciones, setimagenDeEleccionusuario,imagenDeEleccionusuario }) => {
+export const DisplayBotonera = ({ imagenPiedra, imagenPapel, imagenTijeras, eleccionUsuario, setEleccionUsuario, setEleccionPC, eleccionPC, opciones, setimagenDeEleccionusuario, imagenDeEleccionusuario , setimagenDeEleccionPC,  imagenDeEleccionPC}) => {
 
 
 
@@ -9,40 +9,58 @@ export const DisplayBotonera = ({ eleccionUsuario, setEleccionUsuario ,setElecci
   return (
     <div className='claseContMarcador2'>
       <BotonSimbolo
+        imagen={imagenPiedra}
+        valor="piedra"
+
         eleccionUsuario={eleccionUsuario}
         setEleccionUsuario={setEleccionUsuario}
-        etEleccionPC
-        imagen="../practico3/recursos/Piedramini.png"
-        valor={"piedra"}
-        setEleccionPC={setEleccionPC}
+
         eleccionPC={eleccionPC}
-        opciones={opciones}
-        setimagenDeEleccionusuario={setimagenDeEleccionusuario}
-        imagenDeEleccionusuario={imagenDeEleccionusuario}
-      />
-      
-      <BotonSimbolo
-        imagen="../practico3/recursos/Papelmini.png"
-        eleccionUsuario={eleccionUsuario}
-        setEleccionUsuario={setEleccionUsuario}
-        valor={"papel"}
         setEleccionPC={setEleccionPC}
-        eleccionPC={eleccionPC}
-        opciones={opciones}
+
         setimagenDeEleccionusuario={setimagenDeEleccionusuario}
         imagenDeEleccionusuario={imagenDeEleccionusuario}
 
+        setimagenDeEleccionPC={ setimagenDeEleccionPC}
+        imagenDeEleccionPC={ imagenDeEleccionPC}
+
+
+
+
+        opciones={opciones}
       />
+
       <BotonSimbolo
-        imagen="../practico3/recursos/Tijeramini.png"
+        imagen={imagenPapel}
+        valor={"papel"}
+
         eleccionUsuario={eleccionUsuario}
         setEleccionUsuario={setEleccionUsuario}
-        valor={"tijeras"}
-        setEleccionPC={setEleccionPC}
+
         eleccionPC={eleccionPC}
-        opciones={opciones}
+        setEleccionPC={setEleccionPC}
+
+        
         setimagenDeEleccionusuario={setimagenDeEleccionusuario}
         imagenDeEleccionusuario={imagenDeEleccionusuario}
+
+        opciones={opciones}
+
+      />
+      <BotonSimbolo
+        imagen={imagenTijeras}
+        valor={"tijeras"}
+
+        eleccionUsuario={eleccionUsuario}
+        setEleccionUsuario={setEleccionUsuario}
+
+        eleccionPC={eleccionPC}
+        setEleccionPC={setEleccionPC}
+               
+        setimagenDeEleccionusuario={setimagenDeEleccionusuario}
+        imagenDeEleccionusuario={imagenDeEleccionusuario}
+
+        opciones={opciones}
       />
     </div>
   )

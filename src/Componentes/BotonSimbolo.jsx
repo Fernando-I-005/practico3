@@ -2,14 +2,14 @@ import React from 'react'
 import "./BotonSimbolo.css"
 
 
-export const BotonSimbolo = ({ imagen, eleccionUsuario, setEleccionUsuario, valor, eleccionPC, setEleccionPC, opciones, setimagenDeEleccionusuario, imagenDeEleccionusuario }) => {
+export const BotonSimbolo = ({ imagen, eleccionUsuario, setEleccionUsuario, valor, eleccionPC, setEleccionPC, opciones, setimagenDeEleccionusuario, imagenDeEleccionusuario, setimagenDeEleccionPC, imagenDeEleccionPC }) => {
 
   const guardarEleccion = () => {
     setEleccionUsuario(valor);
   };
 
   const imprimirXConsola = () => {
-    console.log(eleccionUsuario + " <--este valor no es real!! ver")
+    console.log(eleccionUsuario + " <--este valor no es real!!imprime valor anteriornpm start")
     console.log(eleccionPC + " <--este valor no es real!! ver")
   };
 
@@ -18,18 +18,22 @@ export const BotonSimbolo = ({ imagen, eleccionUsuario, setEleccionUsuario, valo
     setEleccionPC(jugadaAleatoria);
   };
 
-  const cambiarImagenUsuario = () => {   // esto no funciona, rompe la pagina
-    setimagenDeEleccionusuario();
+  const cambiarImagenUsuario = () => {
+    setimagenDeEleccionusuario(imagen);
   };
 
+
+  /*const cambiarImagenPC = () => {   // esto no funciona, rompe la pagina
+    setimagenDeEleccionPC ();
+  };*/
 
   const handleClick = () => {
     guardarEleccion();
     imprimirXConsola();
     generarJugadaPc();
+    cambiarImagenUsuario();
+    //cambiarImagenPC();
   };
-
-
 
   return (
     <>
@@ -42,7 +46,6 @@ export const BotonSimbolo = ({ imagen, eleccionUsuario, setEleccionUsuario, valo
     </>
   )
 }
-
 
 /* if (eleccionPC == "tijeras" && eleccionUsuario == "papel") {
            setganadorround("Gana PC")

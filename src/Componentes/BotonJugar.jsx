@@ -2,13 +2,7 @@ import React from 'react'
 import "./BotonJugar.css"
 
 
-
-
-
-
-
-export const BotonJugar = ({ setganadorround, ganadorround, eleccionUsuario, eleccionPC }) => {
-
+export const BotonJugar = ({ setganadorround, ganadorround, eleccionUsuario, eleccionPC, setimagenDeEleccionPC, imagenDeEleccionPC, imagenPiedra, imagenPapel, imagenTijeras, textoparrafo2, setTextoparrafo2 }) => {
 
     const determinarGanador = () => {
         if (eleccionPC === "tijeras" && eleccionUsuario === "papel") {
@@ -34,16 +28,38 @@ export const BotonJugar = ({ setganadorround, ganadorround, eleccionUsuario, ele
         }
     }
 
+    /*const cambiarImagenPC = () => {   //complatr con imagen pc
+        setimagenDeEleccionPC(imagenDeEleccionPC);
+      };*/
+    const cambiarImagenPC = () => {
+        if (eleccionPC === "piedra") {
+            setimagenDeEleccionPC(imagenPiedra)
+        }
+        else if (eleccionPC === "papel") {
+            setimagenDeEleccionPC(imagenPapel)
+        }
+        else {
+            setimagenDeEleccionPC(imagenTijeras)
+        }
+    };
 
+    /*const cambiarTextoParrafo2 = () => {  // da el ganador del estado anterior, no sirve
+        setTextoparrafo2(ganadorround)
+    };*/
 
+    const handleClickJugar = () => {
+        determinarGanador();
+        cambiarImagenPC();
+        //cambiarTextoParrafo2();
+    };
 
 
     return (
         <>
             <button
-            onClick={determinarGanador}
+                onClick={handleClickJugar}
                 className='claseBJ'
-                >
+            >
                 Jugar
             </button>
         </>

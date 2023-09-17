@@ -8,34 +8,51 @@ import "./CompPrincipal.css"
 
 
 
-export const CompPrincipal = ({ nombre1, nombre2 }) => {
+export const CompPrincipal = ({ nombreUsuario, nombre2, imagenPiedra, imagenPapel, imagenTijeras, imagenIncognita }) => {
 
-    const [eleccionUsuario, setEleccionUsuario] = useState("valor inicialx");
-    const [eleccionPC, setEleccionPC] = useState("valor inicialy")
+    const [eleccionUsuario, setEleccionUsuario] = useState("nada");
+    const [eleccionPC, setEleccionPC] = useState("nada")
     const opciones = ['piedra', 'papel', 'tijeras']
-    const [ganadorround, setganadorround] = useState("nadie")
-    const [imagenDeEleccionusuario, setimagenDeEleccionusuario] = useState("practico3/recursos/incognita.png")
-    const [imagenDeEleccionPC, setimagenDeEleccionPC] = useState("practico3/recursos/incognita.png")
+    const [ganadorround, setganadorround] = useState("sin ganador aun")
+    const [imagenDeEleccionusuario, setimagenDeEleccionusuario] = useState(imagenIncognita)
+    const [imagenDeEleccionPC, setimagenDeEleccionPC] = useState(imagenIncognita)
+    const [textoparrafo2, setTextoparrafo2] = useState("Elija su jugada y presione 'Jugar'.")
 
 
 
     return (
         <div className='claseCompPrinExt'>
             <section className='claseCompPrinParrafo'>
-                <DisplayParrafo2 />
-                <h4>(p/desarrollador) Usuario eligio {eleccionUsuario}</h4>
-                <h4>(p/desarrollador) Pc eligio {eleccionPC}</h4>
+                <DisplayParrafo2 
+                    textoparrafo2={textoparrafo2}
+                    setTextoparrafo2={setTextoparrafo2}
+                />
+
+
+
+                <h4>(usado por desarrollador) Usuario eligio {eleccionUsuario}, Pc eligio {eleccionPC}</h4>
+               
             </section>
 
             <section>
                 <DisplayBotonera
+                    imagenPiedra={imagenPiedra}
+                    imagenPapel={imagenPapel}
+                    imagenTijeras={imagenTijeras}
+
                     eleccionUsuario={eleccionUsuario}
                     setEleccionUsuario={setEleccionUsuario}
+
                     eleccionPC={eleccionPC}
                     setEleccionPC={setEleccionPC}
+
                     opciones={opciones}
-                    setimagenDeEleccionPC={setimagenDeEleccionPC}
+
                     imagenDeEleccionPC={imagenDeEleccionPC}
+                    setimagenDeEleccionPC={setimagenDeEleccionPC}
+                    
+                    imagenDeEleccionusuario={imagenDeEleccionusuario}
+                    setimagenDeEleccionusuario={setimagenDeEleccionusuario}
                 />
             </section>
 
@@ -45,14 +62,24 @@ export const CompPrincipal = ({ nombre1, nombre2 }) => {
                     eleccionUsuario={eleccionUsuario}
                     ganadorround={ganadorround}
                     setganadorround={setganadorround}
+                    setimagenDeEleccionPC={setimagenDeEleccionPC}
+                    imagenDeEleccionPC={imagenDeEleccionPC}
+                    imagenPiedra={imagenPiedra}
+                    imagenPapel={imagenPapel}
+                    imagenTijeras={imagenTijeras}
+                    setTextoparrafo2={setTextoparrafo2}
                 />
-                <h5> Resultado: {ganadorround}</h5>
+                <h3> Resultado: {ganadorround}</h3>
             </section>
 
             <section>
                 <DisplayImgGrupo
-                    valor1={nombre1}
-                    valor2={nombre2}
+                    imagenPiedra={imagenPiedra}
+                    imagenPapel={imagenPapel}
+                    imagenTijeras={imagenTijeras}
+                    imagenIncognita={imagenIncognita}
+                    nombreUsuario={nombreUsuario}
+                    nombrePC="Computadora"
                     imagenDeEleccionusuario={imagenDeEleccionusuario}
                     setimagenDeEleccionusuario={setimagenDeEleccionusuario}
                     setimagenDeEleccionPC={setimagenDeEleccionPC}
