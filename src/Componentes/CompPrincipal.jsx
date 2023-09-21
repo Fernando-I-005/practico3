@@ -8,7 +8,7 @@ import "./CompPrincipal.css"
 
 
 
-export const CompPrincipal = ({ nombreUsuario, nombre2, imagenPiedra, imagenPapel, imagenTijeras, imagenIncognita }) => {
+export const CompPrincipal = ({ nombreUsuario, nombre2, imagenPiedra, imagenPapel, imagenTijeras, imagenIncognita, contTriunfosUsuario, setcontTriunfosUsuario, contadorTriunfosPC, setContadorTriunfosPC, contadorRound, setContadorRound }) => {
 
     const [eleccionUsuario, setEleccionUsuario] = useState("nada");
     const [eleccionPC, setEleccionPC] = useState("nada")
@@ -23,7 +23,7 @@ export const CompPrincipal = ({ nombreUsuario, nombre2, imagenPiedra, imagenPape
     return (
         <div className='claseCompPrinExt'>
             <section className='claseCompPrinParrafo'>
-                <DisplayParrafo2 
+                <DisplayParrafo2
                     textoparrafo2={textoparrafo2}
                     setTextoparrafo2={setTextoparrafo2}
                 />
@@ -31,7 +31,7 @@ export const CompPrincipal = ({ nombreUsuario, nombre2, imagenPiedra, imagenPape
 
 
                 <h4>(usado por desarrollador) Usuario eligio {eleccionUsuario}, Pc eligio {eleccionPC}</h4>
-               
+
             </section>
 
             <section>
@@ -39,6 +39,7 @@ export const CompPrincipal = ({ nombreUsuario, nombre2, imagenPiedra, imagenPape
                     imagenPiedra={imagenPiedra}
                     imagenPapel={imagenPapel}
                     imagenTijeras={imagenTijeras}
+                    imagenIncognita={imagenIncognita}
 
                     eleccionUsuario={eleccionUsuario}
                     setEleccionUsuario={setEleccionUsuario}
@@ -50,7 +51,7 @@ export const CompPrincipal = ({ nombreUsuario, nombre2, imagenPiedra, imagenPape
 
                     imagenDeEleccionPC={imagenDeEleccionPC}
                     setimagenDeEleccionPC={setimagenDeEleccionPC}
-                    
+
                     imagenDeEleccionusuario={imagenDeEleccionusuario}
                     setimagenDeEleccionusuario={setimagenDeEleccionusuario}
                 />
@@ -68,6 +69,14 @@ export const CompPrincipal = ({ nombreUsuario, nombre2, imagenPiedra, imagenPape
                     imagenPapel={imagenPapel}
                     imagenTijeras={imagenTijeras}
                     setTextoparrafo2={setTextoparrafo2}
+
+
+                    contTriunfosUsuario={contTriunfosUsuario}
+                    setcontTriunfosUsuario={setcontTriunfosUsuario}
+                    contadorTriunfosPC={contadorTriunfosPC}
+                    setContadorTriunfosPC={setContadorTriunfosPC}
+                    contadorRound={contadorRound}
+                    setContadorRound={setContadorRound}
                 />
                 <h3> Resultado: {ganadorround}</h3>
             </section>

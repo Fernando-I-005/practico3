@@ -2,26 +2,38 @@ import React from 'react'
 import "./BotonJugar.css"
 
 
-export const BotonJugar = ({ setganadorround, ganadorround, eleccionUsuario, eleccionPC, setimagenDeEleccionPC, imagenDeEleccionPC, imagenPiedra, imagenPapel, imagenTijeras, textoparrafo2, setTextoparrafo2 }) => {
+export const BotonJugar = ({ setganadorround, ganadorround, eleccionUsuario, eleccionPC, setimagenDeEleccionPC, imagenDeEleccionPC, imagenPiedra, imagenPapel, imagenTijeras, textoparrafo2, setTextoparrafo2, contTriunfosUsuario, setcontTriunfosUsuario, contadorTriunfosPC, setContadorTriunfosPC, contadorRound, setContadorRound }) => {
 
     const determinarGanador = () => {
         if (eleccionPC === "tijeras" && eleccionUsuario === "papel") {
             setganadorround("Gana PC")
+            setContadorRound(contadorRound + 1)
+            setContadorTriunfosPC(contadorTriunfosPC + 1)
         }
         else if (eleccionUsuario === "tijeras" && eleccionPC === "papel") {
             setganadorround("gana Usuario")
+            setContadorRound(contadorRound + 1)
+            setcontTriunfosUsuario(contTriunfosUsuario + 1)
         }
         else if (eleccionPC === "tijeras" && eleccionUsuario === "piedra") {
             setganadorround("gana Usuario")
+            setContadorRound(contadorRound + 1)
+            setcontTriunfosUsuario(contTriunfosUsuario + 1)
         }
         else if (eleccionUsuario === "tijeras" && eleccionPC === "piedra") {
             setganadorround("Gana PC")
+            setContadorRound(contadorRound + 1)
+            setContadorTriunfosPC(contadorTriunfosPC + 1)
         }
         else if (eleccionPC === "piedra" && eleccionUsuario === "papel") {
             setganadorround("gana Usuario")
+            setContadorRound(contadorRound + 1)
+            setcontTriunfosUsuario(contTriunfosUsuario + 1)
         }
         else if (eleccionUsuario === "piedra" && eleccionPC === "papel") {
             setganadorround("Gana PC")
+            setContadorRound(contadorRound + 1)
+            setContadorTriunfosPC(contadorTriunfosPC + 1)
         }
         else {
             setganadorround("empate")
@@ -47,9 +59,34 @@ export const BotonJugar = ({ setganadorround, ganadorround, eleccionUsuario, ele
         setTextoparrafo2(ganadorround)
     };*/
 
+    /*condicional si llega a 3 partidos ganados*/
+// verrrrrrrr...finaliza a la vuelta siguiente luego de 3 triunfos
+    const mejorde5 = () => {
+        if (contTriunfosUsuario === 3) {
+            setTextoparrafo2("¡¡Felicitaciones!! ha vencido a la computadora.");
+            //deshabilitarTodosBotones();
+            //sonidoGanador.play();
+        } else if (contadorTriunfosPC === 3) {
+            setTextoparrafo2("¡¡ Ha sido derrotado!! La computadora ganó.");
+            //deshabilitarTodosBotones()
+            //sonidoPerdedor.play()
+        } else {
+        }
+    }
+
+
+
+
+
+
+
+
+
+
     const handleClickJugar = () => {
         determinarGanador();
         cambiarImagenPC();
+        mejorde5(); // no funciona bien
         //cambiarTextoParrafo2();
     };
 
@@ -58,7 +95,7 @@ export const BotonJugar = ({ setganadorround, ganadorround, eleccionUsuario, ele
         <>
             <button
                 onClick={handleClickJugar}
-                className='claseBJ'
+                className='claseBJ' 
             >
                 Jugar
             </button>

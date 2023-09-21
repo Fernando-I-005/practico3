@@ -1,7 +1,7 @@
 import React from 'react'
 import { BotonSimbolo } from './BotonSimbolo'
 
-export const DisplayBotonera = ({ imagenPiedra, imagenPapel, imagenTijeras, eleccionUsuario, setEleccionUsuario, setEleccionPC, eleccionPC, opciones, setimagenDeEleccionusuario, imagenDeEleccionusuario , setimagenDeEleccionPC,  imagenDeEleccionPC}) => {
+export const DisplayBotonera = ({ imagenPiedra, imagenPapel, imagenTijeras, eleccionUsuario, setEleccionUsuario, setEleccionPC, eleccionPC, opciones, setimagenDeEleccionusuario, imagenDeEleccionusuario , setimagenDeEleccionPC,  imagenDeEleccionPC, imagenIncognita}) => {
 
 
 
@@ -11,6 +11,7 @@ export const DisplayBotonera = ({ imagenPiedra, imagenPapel, imagenTijeras, elec
       <BotonSimbolo
         imagen={imagenPiedra}
         valor="piedra"
+        imagen2={imagenIncognita}
 
         eleccionUsuario={eleccionUsuario}
         setEleccionUsuario={setEleccionUsuario}
@@ -24,25 +25,25 @@ export const DisplayBotonera = ({ imagenPiedra, imagenPapel, imagenTijeras, elec
         setimagenDeEleccionPC={ setimagenDeEleccionPC}
         imagenDeEleccionPC={ imagenDeEleccionPC}
 
-
-
-
         opciones={opciones}
       />
 
       <BotonSimbolo
         imagen={imagenPapel}
         valor={"papel"}
+        imagen2={imagenIncognita}
 
         eleccionUsuario={eleccionUsuario}
         setEleccionUsuario={setEleccionUsuario}
 
         eleccionPC={eleccionPC}
         setEleccionPC={setEleccionPC}
-
         
         setimagenDeEleccionusuario={setimagenDeEleccionusuario}
         imagenDeEleccionusuario={imagenDeEleccionusuario}
+
+        setimagenDeEleccionPC={ setimagenDeEleccionPC}
+        imagenDeEleccionPC={ imagenDeEleccionPC}
 
         opciones={opciones}
 
@@ -50,6 +51,7 @@ export const DisplayBotonera = ({ imagenPiedra, imagenPapel, imagenTijeras, elec
       <BotonSimbolo
         imagen={imagenTijeras}
         valor={"tijeras"}
+        imagen2={imagenIncognita}
 
         eleccionUsuario={eleccionUsuario}
         setEleccionUsuario={setEleccionUsuario}
@@ -59,6 +61,9 @@ export const DisplayBotonera = ({ imagenPiedra, imagenPapel, imagenTijeras, elec
                
         setimagenDeEleccionusuario={setimagenDeEleccionusuario}
         imagenDeEleccionusuario={imagenDeEleccionusuario}
+
+        setimagenDeEleccionPC={ setimagenDeEleccionPC}
+        imagenDeEleccionPC={ imagenDeEleccionPC}
 
         opciones={opciones}
       />

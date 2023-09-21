@@ -2,7 +2,7 @@ import React from 'react'
 import "./BotonSimbolo.css"
 
 
-export const BotonSimbolo = ({ imagen, eleccionUsuario, setEleccionUsuario, valor, eleccionPC, setEleccionPC, opciones, setimagenDeEleccionusuario, imagenDeEleccionusuario, setimagenDeEleccionPC, imagenDeEleccionPC }) => {
+export const BotonSimbolo = ({ imagen, eleccionUsuario, setEleccionUsuario, valor, eleccionPC, setEleccionPC, opciones, setimagenDeEleccionusuario, imagenDeEleccionusuario, setimagenDeEleccionPC, imagenDeEleccionPC, imagenIncognita, imagen2 }) => {
 
   const guardarEleccion = () => {
     setEleccionUsuario(valor);
@@ -22,6 +22,10 @@ export const BotonSimbolo = ({ imagen, eleccionUsuario, setEleccionUsuario, valo
     setimagenDeEleccionusuario(imagen);
   };
 
+  const recambiarImagenPC = () => {
+    setimagenDeEleccionPC(imagen2);
+  };
+
 
   /*const cambiarImagenPC = () => {   // esto no funciona, rompe la pagina
     setimagenDeEleccionPC ();
@@ -32,6 +36,7 @@ export const BotonSimbolo = ({ imagen, eleccionUsuario, setEleccionUsuario, valo
     imprimirXConsola();
     generarJugadaPc();
     cambiarImagenUsuario();
+    recambiarImagenPC()
     //cambiarImagenPC();
   };
 

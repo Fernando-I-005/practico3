@@ -16,9 +16,9 @@ export const App = () => {
 
   const [nombreUsuario, setNombreUsuario] = useState("");
   const [textoParrafo1, setTextoParrafo1] = useState("");
-  const [contTriunfosUsuario, setcontTriunfosUsuario] = useState("0")
-  const [contadorTriunfosPC, setContadorTriunfosPC] = useState("0")
-  const [contadorRound, setContadorRound] = useState("0")
+  const [contTriunfosUsuario, setcontTriunfosUsuario] = useState(0)
+  const [contadorTriunfosPC, setContadorTriunfosPC] = useState(0)
+  const [contadorRound, setContadorRound] = useState(0)
 
 
   return (
@@ -46,6 +46,16 @@ export const App = () => {
         imagenPapel={imagenPapel}
         imagenTijeras={imagenTijeras}
         imagenIncognita={imagenIncognita}
+
+        contTriunfosUsuario={contTriunfosUsuario}
+        setcontTriunfosUsuario={setcontTriunfosUsuario}
+        contadorTriunfosPC={contadorTriunfosPC}
+        setContadorTriunfosPC={setContadorTriunfosPC}
+        contadorRound={contadorRound}
+        setContadorRound={setContadorRound}
+
+        
+
       />
       <CompPiePagina />
     </>
